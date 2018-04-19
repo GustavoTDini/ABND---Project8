@@ -11,6 +11,9 @@ import android.provider.BaseColumns;
 
 public final class HabitContract {
 
+    public final static int HABIT_DONE = 0;
+    public final static int HABIT_NOT_DONE = 1;
+
     private HabitContract(){}
 
     public static final class HabitEntry implements BaseColumns {
@@ -21,9 +24,6 @@ public final class HabitContract {
         public final static String COLUMN_HABIT_NAME = "habit";
         public final static String COLUMN_HABIT_DONE_TODAY = "doneToday";
         public final static String COLUMN_HABIT_TIMES_DONE = "timesDone";
-
-        public final static int HABIT_DONE = 0;
-        public final static int HABIT_NOT_DONE = 1;
 
     }
 }
